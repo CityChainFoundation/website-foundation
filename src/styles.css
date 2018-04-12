@@ -1,0 +1,396 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1rem;
+    background-color: rgb(19, 18, 18);
+    color: white;
+}
+
+body
+{
+    overflow-x: hidden;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.logo {
+    text-align: center;
+    padding: 40px;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.right
+{
+    text-align: right;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    margin: 16px 0;
+    padding: 0;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+h1 {
+    font-weight: 900 !important;
+}
+
+h2::before {
+    content: '';
+    display: block;
+    margin-left: calc(50% - 50px);
+
+    height: 0.25rem;
+    width: 6.5rem;
+    border-radius: 4px;
+    background-color: #DFAB3C;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-transform: uppercase;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    vertical-align: baseline;
+    line-height: 1.3;
+    font-size: 2.25rem;
+    clear: both;
+}
+
+.section {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0 40px 0 40px;
+}
+
+.section .container {
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 1000px;
+}
+
+.header {
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 1px solid red;
+}
+
+.accent {
+    background-color: #DFAB3C;
+}
+
+#footer {
+    text-align: center;
+}
+
+.copyright {
+    color: gray;
+    font-size: 0.9rem;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.copyright a {
+    color: silver;
+}
+
+.copyright a:hover {
+    color: white;
+}
+
+.noselect {
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.top {
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    
+    margin: 24px 30px;
+    
+    z-index: 1000;
+    color: white;
+    animation: fadeIn ease-in-out 1s;
+}
+
+.centered {
+    text-align: center;
+}
+
+.mobile-show
+{
+    display: none;
+    visibility: hidden;
+}
+
+.icon-inline-left
+{
+    float:left;
+    margin-right: 20px;
+}
+
+.icon-inline-right
+{
+    float:right;
+    margin-left: 20px;
+}
+
+.quote
+{
+    font-style: italic;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.quote-image
+{
+    padding-top: 40px;
+}
+
+.quote-image img
+ {
+     width: 30%;
+     min-width: 96px;
+ }
+
+.footer-quote
+{
+    min-height: 300px;
+}
+
+.third-party
+{
+    text-align: right;
+}
+
+.third-party img
+{
+    height: 40px;
+    margin-right: 40px;
+}
+
+.smaller
+{
+    font-size: 0.85rem;
+}
+
+.social-icons
+{
+    color: white;
+    text-align: center;
+}
+
+.social-icons a
+{
+    color: white;
+    margin-right: 20px;
+}
+
+.social-icon {
+    color: white;
+}
+
+.social-icon:hover {
+    color: gray;
+}
+
+.downloads
+{
+    text-align: center;
+}
+
+.downloads a
+{
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.downloads img
+{
+    height: 60px;
+}
+
+.spaced
+{
+    padding-top: 60px;
+}
+
+/* Make the menu items take up a little more space on smaller screens. */
+@media screen and (min-width: 920px) {
+    ::-webkit-scrollbar
+    {
+    width: 12px;  /* for vertical scrollbars */
+    height: 12px; /* for horizontal scrollbars */
+    }
+
+    ::-webkit-scrollbar-track
+    {
+    background: rgba(255, 255, 255, 0.8);
+    }
+
+    ::-webkit-scrollbar-thumb
+    {
+    background: rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* Make the menu items take up a little more space on smaller screens. */
+@media screen and (max-width: 920px) {
+    .action-button
+    {
+        margin-left: 10px !important;
+    }
+}
+
+/* At this size, we'll hide the menu links and show menu button */
+@media screen and (max-width: 840px) {
+
+    .mobile-show
+    {
+        visibility: visible;
+    }
+
+    .action-button-second
+    {
+        margin-right: 60px;
+    }
+    
+    .mobile-hidden
+    {
+        display: none !important;
+    }
+
+    .section .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .article {
+        flex-wrap: wrap;
+    }
+
+    .article .content {
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        padding: 10px;
+    }
+
+    .article .image {
+        width: 100%;
+    }
+
+    .article .image img {
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .action-button
+    {
+        display: none !important;
+    }
+
+    .section .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3,
+    h4,
+    h5 {
+        font-size: 1.4rem;
+    }
+
+    .feature div {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .mobile-show
+    {
+        visibility: visible;
+    }
+
+    .section .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3,
+    h4,
+    h5 {
+        font-size: 1.4rem;
+    }
+}
