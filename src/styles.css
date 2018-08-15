@@ -362,6 +362,14 @@ h3 {
     color: gray;
 }
 
+.chart-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 @media screen and (max-width: 740px) {
     .profile > img {
         width: 120px;
