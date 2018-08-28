@@ -333,14 +333,19 @@ h3 {
 .profile
 {
     margin: 20px;
-    /*border: 1px solid blue;*/
-    
 }
 
 .profile-image {
     width: 200px;
     border-radius: 50%;
-    animation: fadeIn ease-in-out 0.5s;
+    border: 5px solid transparent;
+    box-shadow: 0px 0px 0px 2px #DFAB3C;
+    transition: box-shadow 0.25s linear;
+    margin: 0.5em;
+}
+
+.profile-image:hover {
+    box-shadow: 0px 0px 0px 10px #DFAB3C; 
 }
 
 .profile-name {
